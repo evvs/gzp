@@ -44,8 +44,6 @@ module.exports = {
         new HtmlWebpackPlugin({
           inject: true,
           template: `./src/pages/${page}.html`,
-          scriptLoading: "blocking",
-          inject: "body",
           filename: `${page}.html`,
           chunks: [page, "main"],
         })
